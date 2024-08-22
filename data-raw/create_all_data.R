@@ -1,0 +1,15 @@
+setwd("~/bayespop/R/wpps/wpp2024/data-raw")
+#setwd("~/Rpkg/wpp2024/data-raw")
+
+#source("convert_non_ascii.R")
+source("create_locs_data.R")
+source("create_tfr_data.R")
+source("create_e0_data.R")
+source("create_pop_data.R")
+source("create_mx_data.R")
+source("create_mig_data.R")
+source("create_pasfr_data.R")
+source("create_srb_data.R")
+source("create_misc_data.R")
+
+tools::add_datalist("..", force = TRUE)
