@@ -18,7 +18,7 @@ For the first time, the population projections takes into account uncertainty ab
 
 Although all the WPP data can be accessed from the [UN website](https://population.un.org/wpp), the **wpp2024** R package provides an easy way to access the main demographic indicators, including projection uncertainty. Unlike the previous **wpp** packages available on CRAN, this revision includes annual and 1-year age group (1x1) data. This makes the size of the package too big for a CRAN release, and thus it will be accessible from GitHub, as is the case of [wpp2022](https://github.com/PPgp/wpp2022). 
 
-Five-year datasets are also included. These are not official UN datasets, but were provided by Patrick Gerland. 
+Five-year period datasets are also included. These are not official UN datasets, but were provided by Patrick Gerland, and provide data in legacy 5-year periods as used in earlier WPP revisions (i.e., from mid-year t to mid-year t+5 instead of the newer civil calendar year year from 31 december (midnight) for year t to 31 december (midnight) year t+1). 
 
 **_New in this revision_:** Datasets on migration projection contain uncertainty bounds and are now available by age and sex.
 
@@ -75,9 +75,9 @@ In the following sections we summarize the main indicators. We only list the one
 
 ## Population datasets
 
-**_Caution_:** All annual population datasets are considered to depict population to December 31 of each year. This is different from the official WPP release, which treats population at January 1. Thus, the population numbers in this package are shifted by one year when compared to the official UN data. E.g., population in year 2050 in the R package corresponds to 2051 in the UN data. Vital rates and counts at time t refer to the calendar year t, so that they yield population at time t in this R package.
+**_Caution_:** All annual population datasets are considered to depict population to December 31 (midnight) of each year. This is different from the official WPP release, which treats population at January 1 (0h). Thus, the population numbers in this package are shifted by one year when compared to the official UN data. E.g., population in year 2050 in the R package corresponds to 2051 in the UN data. Vital rates and counts at time t refer to the calendar year t, so that they yield population at time t in this R package.
 
-The 5-year datasets are created so that vital rates observed/projected from January 1 of year t to December 31 of year t+4 correspond to population at January 1 of year t+5. E.g. population in 2055 in a 5x5 dataset corresponds to vital rates/counts aggregated over 2050.0-2054.99. Since the 5x5 population is considered to January 1st, it corresponds to the year t-1 in the annual 1x1 dataset, but matches the timing of the UN-published population. 
+The 5-year datasets are created in legacy WPP 5-year periods so that vital rates observed/projected from July 1 of year t to June 31 of year t+5 correspond to population at July 1 of year t+5. E.g. population in 2055 in a 5x5 dataset corresponds to vital rates/counts aggregated over 2050.5-2054.49. Since the 5x5 population is considered to July 1st, it corresponds to the interpolated values between year t and year t+1 in the annual 1x1 dataset. 
 
 All values are in thousands.
 
