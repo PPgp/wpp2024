@@ -16,9 +16,9 @@ The same data can be retrieved in both, the wide format as well as the long form
 
 
 \subsection{Datasets on population}{
-\bold{Caution:} All annual population datasets are considered to depict population to December 31 of each year. This is different from the official WPP release, which treats population at January 1. Thus, the population numbers in this package are shifted by one year when compared to the official UN data. E.g., population in year 2050 in the R package corresponds to 2051 in UN data. Vital rates and counts at time t refer to the calendar year t, so that they yield population at time t in this R package.
+\bold{Caution:} All annual population datasets are considered to depict population to December 31 (midnight) of each year. This is different from the official WPP release, which treats population at January 1 (0h). Thus, the population numbers in this package are shifted by one year when compared to the official UN data. E.g., population in year 2050 in the R package corresponds to 2051 in the UN data. Vital rates and counts at time t refer to the calendar year t, so that they yield population at time t in this R package.
 
-The 5-year datasets are created so that vital rates observed/projected from January 1 of year t to December 31 of year t+4 correspond to population at January 1 of year t+5. E.g. population in 2055 in a 5x5 dataset corresponds to vital rates/counts aggregated over 2050.0-2054.99. Since the 5x5 population is considered to January 1st, it corresponds to the year t-1 in the annual 1x1 dataset, but matches the timing of the UN-published population. 
+The 5-year datasets are created in legacy WPP 5-year periods so that vital rates observed/projected from July 1 of year t to June 31 of year t+5 correspond to population at July 1 of year t+5. E.g. population in 2055 in a 5x5 dataset corresponds to vital rates/counts aggregated over 2050.5-2054.49. Since the 5x5 population is considered to July 1st, it corresponds to the interpolated values between year t and year t+1 in the annual 1x1 dataset. 
 
 \itemize{
 \item \bold{Historical estimates}
