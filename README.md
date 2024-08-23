@@ -189,14 +189,14 @@ The sex ratio at birth is defined as the ratio of male to female. The datasets c
 Other indicators are available in the miscellaneous dataset, such as births- and deaths-related indicators. These are only available in the long format on the one-year scale. 
 
 * `misc1dt` (historical estimates), `miscproj1dt` (projections). Both datasets contain the following columns:
-	* _births_ : number of births in 1000
-	* _cbr_ : number of live births per 1,000 population
-	* _deaths_ : number of births in 1000
-	* _cdr_ : number of deaths per 1,000 population
-	* _PopChange_: population change in 1000
-	* _growthrate_ : annual rate of population change (as %)
-	* _cnmr_: crude net migration rate
-	* _NatChangeRT_: rate of natural change
+	* _births_ : annual number of live births in 1,000
+	* _cbr_ : annual number of live births per 1,000 population
+	* _deaths_ : annual number of deaths in 1,000
+	* _cdr_ : annual number of deaths per 1,000 population
+	* _PopChange_: annual population change (difference between the population at the end of the period and that at the beginning of the period. Refers to annual civil calendar years from 1 January to 31 December). Data are presented in thousands.
+	* _growthrate_ : annual rate of population change (as %) computed as the average exponential rate of growth of the population over a given period. It is calculated as ln(P2/P1)/n where P1 and P2 are the populations on 1 January of subsequent years, and n is the length of the period between t1 and t2 (n=1 for annual data).
+	* _cnmr_: annual crude net migration rate which corresponds to the  number of immigrants minus the number of emigrants over a period, divided by the person-years lived by the population of the receiving country over that period. It is expressed as net number of migrants per 1,000 population.
+	* _NatChangeRT_: rate of natural change (crude birth rate minus the crude death rate) per 1,000 population. Represents the portion of population growth (or decline) determined exclusively by births and deaths.
  
 ### Locations
-The dataset on UN locations is stored in `UNlocations`. 
+The dataset on UN locations is stored in `UNlocations`and provides the United Nations table of locations, including regions, for statistical purposes as available in 2024.
