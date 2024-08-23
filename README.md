@@ -10,7 +10,7 @@ In addition to the expert analysts working at the UN, Patrick Gerland  assembled
 
 For the first time, the population projections takes into account uncertainty about migration. 
 
-[Read about the key highlights on the UN website.](https://population.un.org/wpp/Publications/Files/WPP2024_Key-Messages.pdf)
+[Read about the key highlights on the UN website.](https://www.un.org/development/desa/pd/world-population-prospects-2024)
 
 [Details about the methodology](https://population.un.org/wpp/Publications/Files/WPP2024_Methodology_Advance_Unedited.pdf)
 
