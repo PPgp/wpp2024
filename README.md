@@ -18,7 +18,7 @@ For the first time, the population projections takes into account uncertainty ab
 
 Although all the WPP data can be accessed from the [UN website](https://population.un.org/wpp), the **wpp2024** R package provides an easy way to access the main demographic indicators, including projection uncertainty. Unlike the previous **wpp** packages available on CRAN, this revision includes annual and 1-year age group (1x1) data. This makes the size of the package too big for a CRAN release, and thus it will be accessible from GitHub, as is the case of [wpp2022](https://github.com/PPgp/wpp2022). 
 
-Five-year period datasets are also included. These are not official UN datasets, but were provided by Patrick Gerland, and provide data in legacy 5-year periods as used in earlier WPP revisions (i.e., from mid-year t to mid-year t+5 instead of the newer civil calendar year year from 31 december (midnight) for year t to 31 december (midnight) year t+1). 
+Five-year period datasets are also included. These are not official UN datasets, but were provided by Patrick Gerland, and provide data in legacy 5-year periods as used in earlier WPP revisions (i.e., from mid-year t to mid-year t+5 instead of the newer civil calendar year from 31 december (midnight) for year t to 31 december (midnight) year t+1). 
 
 **_New in this revision_:** Datasets on migration projection contain uncertainty bounds and are now available by age and sex.
 
