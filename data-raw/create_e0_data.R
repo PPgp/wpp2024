@@ -83,9 +83,9 @@ e0proj1dt <- e01[, year := as.integer(year)][order(country_order, year)][, count
 use_data(e0proj1dt, overwrite = TRUE)
 
 # 5-year projection
-e0M <- data.table::fread('e0MprojMed5.txt', sep = "\t")[, country := NULL]
-e0F <- data.table::fread('e0FprojMed5.txt', sep = "\t")[, country := NULL]
-e0B <- data.table::fread('e0BprojMed5.txt', sep = "\t")[, country := NULL]
+e0M <- data.table::fread('e0MprojMedium5.txt', sep = "\t")[, country := NULL]
+e0F <- data.table::fread('e0FprojMedium5.txt', sep = "\t")[, country := NULL]
+e0B <- data.table::fread('e0BprojMedium5.txt', sep = "\t")[, country := NULL]
 e0F80l <- data.table::fread('e0Fproj80l5.txt', sep = "\t")[, country := NULL]
 e0F80u <- data.table::fread('e0Fproj80u5.txt', sep = "\t")[, country := NULL]
 e0F95l <- data.table::fread('e0Fproj95l5.txt', sep = "\t")[, country := NULL]
