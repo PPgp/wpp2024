@@ -31,10 +31,12 @@ source("popprojAge5dt.R")
 popprojAge5dt[, name := NULL]
 use_data(popprojAge5dt, overwrite = TRUE)
 
-files.to.remove <- c()
+files.to.remove <- c("popprojAge1dt.rda", "popprojAge1dt.R", "popAge1dt.rda", "popAge1dt.R", "mx1dt.rda", "mx1dt.R")
 for(f in files.to.remove) unlink(f)
 
-files.to.copy <- c("popAge5dt.R", "popprojAge5dt.R")
-file.copy(file.path(wrkdir, files.to.copy), ".")
-
 setwd(wrkdir)
+
+files.to.copy <- c("popAge5dt.R", "popprojAge5dt.R")
+file.copy(files.to.copy, data.dir, overwrite = TRUE)
+
+tools::add_datalist("..", force = TRUE)
