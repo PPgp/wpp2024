@@ -47,6 +47,12 @@ options(timeout = 600)
 install_github("PPgp/wpp2024")
 ```
 
+If this doesn't work due to connectivity issues, try a local installation. For this, download the package zip file from GitHub (click on the "Code" button and then on "Download ZIP"). Then install via:
+
+```
+devtools::install_local("path/to/wpp2024-main.zip")
+```
+
 
 All datasets described below can be accessed via the function `data()`, e.g. 
 
